@@ -1,4 +1,3 @@
-import sys
 try:
     from pytube import YouTube
 except ImportError:
@@ -6,7 +5,7 @@ except ImportError:
     print('can install by following the instructions at')
     print('https://pytube.io/en/latest/user/install.html')
     input('Press ENTER to exit.')
-    sys.exit()
+    exit()
 
 try:
     # Ask user for url

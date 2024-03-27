@@ -1,4 +1,12 @@
-from pytube import YouTube
+import sys
+try:
+    from pytube import YouTube
+except ImportError:
+    print('This program requires the PyTube module, which you')
+    print('can install by following the instructions at')
+    print('https://pytube.io/en/latest/user/install.html')
+    input('Press ENTER to exit.)
+    sys.exit()
 
 try:
     # Ask user for url
